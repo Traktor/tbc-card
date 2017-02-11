@@ -1,0 +1,22 @@
+{
+  "name": "tbc-card",
+  "main": "tbc-card.js",
+  "description": "Node module for TBC card payments API.",
+  "version": "0.0.2",
+  "author": {
+    "name": "Archil Panchulidze (achiko)",
+    "url": "https://github.com/achiko"
+  },
+  "contributors": [
+    {
+      "name": "Lasha Tavartkiladze (coloraggio)",
+      "url": "https://github.com/coloraggio"
+    }
+  ],
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "license": "MIT",
+  "repository": "Traktor/tbc-card",
+  "bin": "./tbc-card.js"
+}
