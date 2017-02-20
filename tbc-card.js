@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 
@@ -119,6 +120,12 @@ if (isCalledDirectly) {
         case 'refund':
             break;
         case 'close-day':
+            closeDay({}, function (err, response) {
+                if (err) {
+                    return console.log('ERROR OCCURED:', err);
+                }
+                console.log(response);
+            });
             break;
         default: 
             console.log('Error: A valid --action must be specified.');
@@ -129,7 +136,8 @@ if (isCalledDirectly) {
         registerTransaction: registerTransaction,
         checkTransaction: checkTransaction,
         makeTransaction: makeTransaction,
-        cancelTransaction: cancelTransaction
+        cancelTransaction: cancelTransaction,
+        closeDay: closeDay
     };
 }
 
@@ -349,20 +357,17 @@ function cancelTransaction(params, callback) {
 // TODO
 //
 // Close a payment day.
-// TODO 1: This must be run as a scheduled service.
-// TODO 2: Do we need this ar all?
 //
 function closeDay(params, callback) {
-    // var fields =  {
-    //     command: COMMAND.CLOSE_DMS_DAY,
-    // };
-
-    // tbcAPICall(fields, function(err, tbcResponse) {
-    //     if (err) {
-    //         return callback(APP.ERROR.CARD_PAYMENT_ERROR);
-    //     }
-    //     return callback(null, tbcResponse);
-    // });
+    var tbcFields =  {
+        command: COMMAND.CLOSE_DMS_DAY,
+    };
+    tbcAPICall(tbcFields, function(err, tbcResponse) {
+        if (err) {
+            return callback(err);
+        }
+        return callback(null, tbcResponse);
+    });
 }
 
 

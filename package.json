@@ -2,7 +2,7 @@
   "name": "tbc-card",
   "main": "tbc-card.js",
   "description": "Node module for TBC card payments API.",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "author": {
     "name": "Archil Panchulidze (achiko)",
     "url": "https://github.com/achiko"
