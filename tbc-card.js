@@ -81,6 +81,7 @@ if (isCalledDirectly) {
                 if (err) {
                     return console.log('ERROR OCCURED:', err);
                 }
+                console.log(new Date());
                 console.log(response);
             });
             break;
@@ -92,6 +93,7 @@ if (isCalledDirectly) {
                 if (err) {
                     return console.log('ERROR OCCURED:', err);
                 }
+                console.log(new Date());
                 console.log(response);
             });
             break;
@@ -104,6 +106,7 @@ if (isCalledDirectly) {
                 if (err) {
                     return console.log('ERROR OCCURED:', err);
                 }
+                console.log(new Date());
                 console.log(response);
             });
             break;
@@ -114,6 +117,7 @@ if (isCalledDirectly) {
                 if (err) {
                     return console.log('ERROR OCCURED:', err);
                 }
+                console.log(new Date());
                 console.log(response);
             });
             break;
@@ -124,6 +128,7 @@ if (isCalledDirectly) {
                 if (err) {
                     return console.log('ERROR OCCURED:', err);
                 }
+                console.log(new Date());
                 console.log(response);
             });
             break;
