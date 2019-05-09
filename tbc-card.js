@@ -421,7 +421,7 @@ function tbcAPICall(fields, callback) {
     var options = {
         method: 'POST',
         https: true,
-        host: 'securepay.ufc.ge',
+        host: 'ecommerce.ufc.ge',
         port: 18443,
         path: '/ecomm2/MerchantHandler',
         pfx: apiConfig.pfxFile,
