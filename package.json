@@ -4,13 +4,17 @@
   "description": "Node module for TBC card payments API.",
   "version": "0.0.7",
   "author": {
-    "name": "Archil Panchulidze (achiko)",
+    "name": "Archil Panchulidze",
     "url": "https://github.com/achiko"
   },
   "contributors": [
     {
-      "name": "Lasha Tavartkiladze (coloraggio)",
-      "url": "https://github.com/coloraggio"
+      "name": "Lasha Tavartkiladze",
+      "url": "https://github.com/ltbits"
+    },
+    {
+      "name": "Vakho Shotashvili",
+      "url": "https://github.com/vakhosh"
     }
   ],
   "dependencies": {
